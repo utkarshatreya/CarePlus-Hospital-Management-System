@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patient Registration - CarePlus Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+    <div class="logo">
+        <h2>🏥 CarePlus Hospital</h2>
+    </div>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/register">Registration</a></li>
+        <li><a href="/patients">Patient Records</a></li>
+    </ul>
+</nav>
+
+
+<!-- Registration Form -->
+
+<div class="form-container">
+
+<h1>📝 Patient Registration</h1>
+
+<p>
+Please enter complete patient information for safe and accurate medical records.
+</p>
+
+
+<form action="/add-patient" method="POST">
+
+
+<label>👤 Patient Name</label>
+
+<input
+type="text"
+name="name"
+placeholder="Enter full name"
+required>
+
+
+<label>🎂 Age</label>
+
+<input
+type="number"
+name="age"
+min="1"
+max="120"
+placeholder="Enter age"
+required>
+
+
+<label>⚧ Gender</label>
+
+<select name="gender" required>
+
+<option value="">
+Select Gender
+</option>
+
+<option value="Male">
+Male
+</option>
+
+<option value="Female">
+Female
+</option>
+
+<option value="Other">
+Other
+</option>
+
+</select>
+
+
+<label>📅 Registration Date</label>
+
+<input
+type="date"
+name="date"
+required>
+
+
+<label>📱 Mobile Number</label>
+
+<input
+type="tel"
+name="mobile"
+placeholder="Enter mobile number"
+required>
+
+
+<label>🏠 Address</label>
+
+<textarea
+name="address"
+placeholder="Enter complete address"
+required>
+</textarea>
+
+
+<label>🩺 Disease Details</label>
+
+<textarea
+name="disease"
+placeholder="Describe symptoms or disease"
+required>
+</textarea>
+
+
+<label>🚨 Emergency Case</label>
+
+<select name="emergency" required>
+
+<option value="No">
+No
+</option>
+
+<option value="Yes">
+Yes
+</option>
+
+</select>
+
+
+<label>🏥 Patient Status</label>
+
+<select name="status" required>
+
+<option value="Normal">
+Normal
+</option>
+
+<option value="Under Treatment">
+Under Treatment
+</option>
+
+<option value="Critical">
+Critical
+</option>
+
+</select>
+
+
+<button type="submit">
+Register Patient
+</button>
+
+
+</form>
+
+</div>
+
+
+<!-- Footer -->
+
+<footer>
+
+<h3>
+🏥 CarePlus Hospital
+</h3>
+
+<p>
+Quality Healthcare | Advanced Technology | 24×7 Emergency
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
