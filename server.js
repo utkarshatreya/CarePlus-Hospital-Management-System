@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGO_URI)
   console.log(err);
 });
 
-const Patient = require("./models/patient.js");
+const Patient = require("./models/Patient.js");
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
